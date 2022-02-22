@@ -1,0 +1,5 @@
+RegisterServerEvent('news')
+AddEventHandler('news', function(param)
+	local player = GetPlayerName(source)
+	TriggerClientEvent('chatMesssage', -1, "^4[NEWS] " .. player .. ": ^4" .. param)
+end)
